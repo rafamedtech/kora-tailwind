@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply w-fit rounded-custom px-8 py-3 text-[0.875rem] text-white;
+  }
+  .btn-inverted {
+    @apply w-fit rounded-custom border bg-transparent px-8 py-3 text-[0.875rem];
+  }
+
+  .nav-active {
+    @apply bg-white;
+    border-bottom: 1px solid #e3e8ec;
+    transition: all 0.3s ease;
+  }
+
+  .nav-active .nav-container {
+    @apply py-2;
+    transition: all 0.3s ease;
+  }
+}
+
+@layer utilities {
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+  }
+  main {
+    overflow-x: hidden;
+  }
+
+  .hero {
+    background: url('https://htmlrev.com/preview/kora/images/header-background.png') center center
+      no-repeat;
+    background-size: cover;
+    width: 100vw;
+  }
+}
